@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Setup Selective Memory",
+      "type": "shell",
+      "command": "make setup",
+      "inAgents": true,
+      "runOptions": {
+        "runOn": "worktreeCreated"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Start Selective Memory",
+      "type": "shell",
+      "command": "make dev",
+      "inAgents": true,
+      "problemMatcher": []
+    }
+  ]
+}
